@@ -3,11 +3,11 @@ package br.com.alura.linguagens.api;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-// notação dizendo que isso representa um documento no mongo
+// anotação dizendo que isso representa um documento no mongo
 @Document(collection = "principaisLinguagens")
 public class Linguagem {
 
-    // notação de id relacionada ao mongo, pois o mesmo gera um id a cada inserção
+    // anotação de id relacionada ao mongo, pois o mesmo gera um id a cada inserção
     @Id
     private String id;
     private String title;
